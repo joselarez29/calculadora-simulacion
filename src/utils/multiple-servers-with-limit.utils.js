@@ -85,7 +85,7 @@ const chanceTheyAreOnSystemDetails = ({ clientsAmount = 100, arrivalTime, respon
   const result = []
   let counter = 0;
   let accumulated = 0;
-  while (counter < clientsAmount) {
+  while (counter <= clientsAmount) {
     const chance = chanceTheyAreOnTheSystem({ clientsAmount: counter, arrivalTime, responseTime, usageOfTheSystem, serversAmount, limit })
     accumulated += chance;
     result.push({ n: counter, Pn: chance, PnAccumulated: accumulated });
