@@ -5,15 +5,15 @@ import NavigationBar from "../../components/navigation-bar/navigation-bar.compon
 const links = [
   {
     name: 'Inicio',
-    path: '/'
+    path: '/lineas-de-espera/'
   },
   {
     name: 'Un Servidor',
-    path: '/un-servidor'
+    path: '/lineas-de-espera/un-servidor'
   },
   {
     name: 'Varios Servidores',
-    path: '/varios-servidores'
+    path: '/lineas-de-espera/varios-servidores'
   }
 ]
 

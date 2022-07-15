@@ -11,7 +11,7 @@ import MultipleServers from './routes/multiple-servers/multiple-servers.route';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Navigation />}>
+      <Route path='/lineas-de-espera' element={<Navigation />}>
         <Route index element={<Home />} />
         <Route path='un-servidor' element={<OneServer />} />
         <Route path='varios-servidores' element={<MultipleServers />} />
