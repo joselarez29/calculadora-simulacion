@@ -99,12 +99,6 @@ const chanceTheyAreOnSystemDetails = ({ clientsAmount = 100, arrivalTime, respon
 
 const multipleServersWithLimit = ({ arrivalTime, responseTime, serversAmount, limit }) => {
   const usageOfTheSystem = averageUsageOfTheSystem({ arrivalTime, responseTime });
-  // const timeOnSystem = 0;
-  // const numberOfClientsOnTheQueue = 0;
-  // const timeOnQueue = 0;
-  // const numberOfClientsOnTheSystem = 0;
-  // const chanceTheyAreOnDetails = [{ n: 1, Pn: 1, PnAccumulated: 1 }]
-  // const chanceToWait = 0;
   const timeOnSystem = averageTimeOnSystem({ arrivalTime, responseTime, usageOfTheSystem, serversAmount, limit });
   const numberOfClientsOnTheQueue = averageNumberOfClientsOnTheQueue({ arrivalTime, responseTime, usageOfTheSystem, serversAmount, limit });
   const timeOnQueue = averageTimeOnQueue({ arrivalTime, responseTime, usageOfTheSystem, serversAmount, limit });
