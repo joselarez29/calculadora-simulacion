@@ -1,7 +1,7 @@
 {
-  "name": "proyecto-final",
+  "name": "lineas-de-espera-uno-varios-servidores",
   "version": "0.1.0",
-  "homepage": "https://fredzerpa-unimar.github.io/simulacion-de-servidores",
+  "homepage": "https://fredzerpa-unimar.github.io/lineas-de-espera",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
