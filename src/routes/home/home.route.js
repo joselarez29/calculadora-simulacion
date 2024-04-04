@@ -5,10 +5,10 @@ const Home = () => {
     <Box component='main' sx={{ flexGrow: 1, p: 3 }}>
       <Typography variant="h3" fontWeight="light" mb={3}>Calculadora Probabilística</Typography>
 
-      <Typography variant="body1" mb={2} fontSize="x-large" fontWeight="light">
+      <Typography variant="body1" component="div" mb={2} fontSize="x-large" fontWeight="light">
         En esta presentación, se expondrá el desarrollo de una calculadora que calcula valores de probabilidad utilizando diferentes modelos probabilísticos:
 
-        <Typography variant="body2" component="div" my={2} ml={4} fontStyle="italic" fontWeight="bold" fontSize="large">
+        <Typography variant="body2" my={2} ml={4} fontStyle="italic" fontWeight="bold" fontSize="large">
           • Distribución de Poisson. <br />
           • Distribución exponencial. <br />
           • Líneas de espera con uno o varios servidores, con o sin límite. <br />

@@ -19,6 +19,7 @@ function App() {
         <Route path='lineas-de-espera/varios-servidores' element={<MultipleServers />} />
         <Route path='distribucion/poisson' element={<Poisson />} />
         <Route path='distribucion/exponencial' element={<Exponential />} />
+        <Route path='*' element={<Home />} />
       </Route>
     </Routes>
   );
