@@ -1,7 +1,7 @@
 {
-  "name": "lineas-de-espera-uno-varios-servidores",
+  "name": "calculadora-simulacion-y-optimizacion",
   "version": "0.1.0",
-  "homepage": "https://fredzerpa-unimar.github.io/lineas-de-espera",
+  "homepage": "https://joselarez29.github.io/calculadora-simulacion",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",

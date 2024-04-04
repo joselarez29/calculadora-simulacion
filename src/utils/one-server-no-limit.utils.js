@@ -57,7 +57,7 @@ const chanceTheyAreOnSystemDetails = ({ clientsAmount = 100, usageOfTheSystem })
     result.push({ n: counter, Pn: chance, PnAccumulated: accumulated });
     counter++;
 
-    if (Number(chance.toFixed(4)) === 0) break;
+    if (Number(chance.toFixed(6)) === 0) break;
   }
 
   return result;

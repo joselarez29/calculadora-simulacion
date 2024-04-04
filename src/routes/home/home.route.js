@@ -3,13 +3,20 @@ import { Box, Grid, Typography } from "@mui/material";
 const Home = () => {
   return (
     <Box component='main' sx={{ flexGrow: 1, p: 3 }}>
-      <Typography variant="h4" mb={3}>Bienvenido</Typography>
+      <Typography variant="h3" fontWeight="light" mb={3}>Calculadora Probabilística</Typography>
 
-      <Typography variant="body1" mb={2}>
-        Este es un programa ejecutable para la resolucion de problemas de lineas de espera, de Uno o Varios Servidores.
+      <Typography variant="body1" mb={2} fontSize="x-large" fontWeight="light">
+        En esta presentación, se expondrá el desarrollo de una calculadora que calcula valores de probabilidad utilizando diferentes modelos probabilísticos:
+
+        <Typography variant="body2" component="div" my={2} ml={4} fontStyle="italic" fontWeight="bold" fontSize="large">
+          • Distribución de Poisson. <br />
+          • Distribución exponencial. <br />
+          • Líneas de espera con uno o varios servidores, con o sin límite. <br />
+        </Typography>
       </Typography>
+      {/* TODO: Add instructions of how the page works */}
       <Grid container justifyContent='center'>
-        <img alt='Lineas de espera' style={{height: 'auto', maxWidth: '100%'}} src={process.env.PUBLIC_URL + '/images/lineas-de-espera.png'} />
+        <img alt='Lineas de espera' style={{ height: 'auto', maxWidth: '100%' }} src={process.env.PUBLIC_URL + '/images/lineas-de-espera.png'} />
       </Grid>
     </Box>
   )

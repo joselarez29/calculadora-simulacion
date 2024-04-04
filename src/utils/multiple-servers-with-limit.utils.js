@@ -91,7 +91,7 @@ const chanceTheyAreOnSystemDetails = ({ clientsAmount = 100, arrivalTime, respon
     result.push({ n: counter, Pn: chance, PnAccumulated: accumulated });
     counter++;
 
-    // if (Number(chance.toFixed(4)) === 0) break;
+    // if (Number(chance.toFixed(6)) === 0) break;
   }
 
   return result;
@@ -108,12 +108,12 @@ const multipleServersWithLimit = ({ arrivalTime, responseTime, serversAmount, li
 
   return {
     displayBox: {
-      ρ: usageOfTheSystem.toFixed(4),
-      Ws: timeOnSystem.toFixed(4),
-      Lq: numberOfClientsOnTheQueue.toFixed(4),
-      Wq: timeOnQueue.toFixed(4),
-      Ls: numberOfClientsOnTheSystem.toFixed(4),
-      Pw: chanceToWait.toFixed(4),
+      ρ: usageOfTheSystem.toFixed(6),
+      Ws: timeOnSystem.toFixed(6),
+      Lq: numberOfClientsOnTheQueue.toFixed(6),
+      Wq: timeOnQueue.toFixed(6),
+      Ls: numberOfClientsOnTheSystem.toFixed(6),
+      Pw: chanceToWait.toFixed(6),
     },
     table: chanceTheyAreOnDetails,
   }

@@ -1,5 +1,5 @@
 import Grid from '@mui/material/Grid';
-import Form from '../../components/form/form.component';
+import Form from '../../components/forms/servers-form.component';
 import OneServerTable from '../../components/one-server-table/one-server-table.component';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -31,11 +31,11 @@ const OneServer = () => {
       } = hasLimit ? oneServerWithLimit({ arrivalTime, responseTime, limit }) : oneServerWithNoLimit({ arrivalTime, responseTime })
 
       setDisplayBoxData({
-        ρ: usageOfTheSystem.toFixed(4),
-        Ws: timeOnSystem.toFixed(4),
-        Lq: numberOfClientsOnTheQueue.toFixed(4),
-        Wq: timeOnQueue.toFixed(4),
-        Ls: numberOfClientsOnTheSystem.toFixed(4),
+        ρ: usageOfTheSystem.toFixed(6),
+        Ws: timeOnSystem.toFixed(6),
+        Lq: numberOfClientsOnTheQueue.toFixed(6),
+        Wq: timeOnQueue.toFixed(6),
+        Ls: numberOfClientsOnTheSystem.toFixed(6),
       })
 
       setTableData(chanceTheyAre)
@@ -51,7 +51,7 @@ const OneServer = () => {
         </Typography>
       </Grid>
       <Grid item container xs={12} mb={5}>
-        <Form title='Un Servidor' setData={setData} hasMultipleServers={false} />
+        <Form setData={setData} hasMultipleServers={false} />
       </Grid>
       <Grid item container xs={12} md={4} justifyContent='center'>
         <Typography component='h2' variant='h5' mb={3}>

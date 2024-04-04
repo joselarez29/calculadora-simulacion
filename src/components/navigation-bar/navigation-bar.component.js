@@ -45,14 +45,14 @@ const NavigationBar = ({ links }) => {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav" position="relative" sx={{ mb: '2.5rem', background: 'rgb(39, 39, 39)' }} >
+      <AppBar component="nav" position="relative" sx={{ mb: '2.5rem', borderRadius: '4rem', background: 'rgb(39, 39, 39)' }} >
         <Toolbar>
           <IconButton
             color='inherit'
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mx: 0, display: { sm: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
@@ -62,6 +62,7 @@ const NavigationBar = ({ links }) => {
             sx={{ display: { xs: 'none', sm: 'block' } }}
             color='white'
             mr={10}
+            ml={4}
           >
             UNIMAR
           </Typography>

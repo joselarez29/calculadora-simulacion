@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { Button, FormControl, Radio, RadioGroup } from '@mui/material';
 
-const Form = ({ setData, hasMultipleServers }) => {
+const ServersForm = ({ setData, hasMultipleServers }) => {
   const [hasLimit, setHasLimit] = useState(false)
 
   const handleSubmit = (event) => {
@@ -41,7 +41,7 @@ const Form = ({ setData, hasMultipleServers }) => {
           </Grid>
           <Grid item container xs={12} sm={3} spacing={1}>
             <Grid item xs={12}>
-              <Typography component="h2" variant="overline">
+              <Typography variant="overline">
                 Limites en cola
               </Typography>
             </Grid>
@@ -55,7 +55,8 @@ const Form = ({ setData, hasMultipleServers }) => {
                 name="limit-amount"
                 label="Limite en espera"
                 inputProps={{
-                  min: 1
+                  min: 0.01,
+                  step: 0.01,
                 }}
               />
             </Grid>
@@ -63,7 +64,7 @@ const Form = ({ setData, hasMultipleServers }) => {
           <Grid item container xs={12} sm={3} spacing={1}>
 
             <Grid item xs={12}>
-              <Typography component="h2" variant="overline">
+              <Typography variant="overline">
                 Servidores
               </Typography>
             </Grid>
@@ -77,14 +78,15 @@ const Form = ({ setData, hasMultipleServers }) => {
                 name="servers-amount"
                 label="Cantidad de servidores (c)"
                 inputProps={{
-                  min: 1
+                  min: 0.01,
+                  step: 0.01,
                 }}
               />
             </Grid>
           </Grid>
           <Grid item container xs={12} sm={6} spacing={1}>
             <Grid item xs={12}>
-              <Typography component="h2" variant="overline">
+              <Typography variant="overline">
                 Tiempos (Horas)
               </Typography>
             </Grid>
@@ -96,7 +98,8 @@ const Form = ({ setData, hasMultipleServers }) => {
                 name="arrival-time"
                 label="Llegada (λ)"
                 inputProps={{
-                  min: 1
+                  min: 0.01,
+                  step: 0.01,
                 }}
               />
             </Grid>
@@ -108,14 +111,16 @@ const Form = ({ setData, hasMultipleServers }) => {
                 name="response-time"
                 label="Atencion (μ)"
                 inputProps={{
-                  min: 1,
+                  min: 0.01,
                   step: 'any'
                 }}
               />
             </Grid>
           </Grid>
-          <Grid item container xs={12} justifyContent='flex-end'>
-            <Button type='submit' variant='contained'>Calcular</Button>
+          <Grid item container xs={12} alignItems={{ xs: "center", sm: "flex-end" }} justifyContent="center" mt={2}>
+            <Grid item xs={12} sm={3}>
+              <Button type='submit' fullWidth variant='contained'>Calcular</Button>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
@@ -123,4 +128,4 @@ const Form = ({ setData, hasMultipleServers }) => {
   );
 }
 
-export default Form;
+export default ServersForm;

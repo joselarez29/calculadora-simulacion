@@ -8,36 +8,7 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import { useState } from 'react';
 
-const columns = [
-  {
-    id: 'n',
-    align: 'center',
-    label: 'n', minWidth: 170
-  },
-  {
-    id: 'Pn',
-    label: 'Pn',
-    align: 'center',
-    minWidth: 170,
-    format: (value) => value.toFixed(6),
-  },
-  {
-    id: 'PnAccumulated',
-    label: 'Pn Acumulado',
-    minWidth: 170,
-    align: 'center',
-    format: (value) => value.toFixed(6),
-  },
-  // {
-  //   id: '',
-  //   label: 'P * N',
-  //   minWidth: 170,
-  //   align: 'right',
-  //   format: (value) => value.toFixed(6),
-  // },
-];
-
-const OneServerTable = ({ data }) => {
+const DistributionTable = ({ data, columns }) => {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
@@ -104,4 +75,4 @@ const OneServerTable = ({ data }) => {
   );
 }
 
-export default OneServerTable;
+export default DistributionTable;

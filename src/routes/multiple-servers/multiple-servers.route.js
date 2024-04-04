@@ -1,5 +1,5 @@
 import Grid from '@mui/material/Grid';
-import Form from '../../components/form/form.component';
+import Form from '../../components/forms/servers-form.component';
 import OneServerTable from '../../components/one-server-table/one-server-table.component';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';

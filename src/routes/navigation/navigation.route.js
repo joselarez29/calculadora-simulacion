@@ -5,7 +5,15 @@ import NavigationBar from "../../components/navigation-bar/navigation-bar.compon
 const links = [
   {
     name: 'Inicio',
-    path: '/lineas-de-espera/'
+    path: '/'
+  },
+  {
+    name: 'Poisson',
+    path: '/distribucion/poisson'
+  },
+  {
+    name: 'Exponencial',
+    path: '/distribucion/exponencial'
   },
   {
     name: 'Un Servidor',
