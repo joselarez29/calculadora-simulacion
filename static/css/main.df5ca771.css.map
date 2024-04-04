@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.df5ca771.css","mappings":"AAAA,EACE,qBACF,CAEA,UAEE,QAAS,CACT,SACF,CAEA,KAEE,gBACF","sources":["index.css"],"sourcesContent":["* {\n  box-sizing: border-box;\n}\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n}\n\nhtml {\n  /* background-color: #282c34; */\n  min-height: 100vh;\n}\n"],"names":[],"sourceRoot":""}
